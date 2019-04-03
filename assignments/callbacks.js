@@ -5,7 +5,9 @@
 /* #region -- EXAMPLE REGION   */
 
 // const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
+
 // //Given this problem: 
+
 // function firstItem(arr, cb) {
 //   // firstItem passes the first item of the given array to the callback function.
 // }
@@ -26,29 +28,42 @@ const itemsV2 = ['GTX 1060', 'i7 6600k', 'Trident 8GB DDR5', 'Coolermaster Case'
 
 function getLength(array, callback) {
   // getLength passes the length of the array into the callback.
-  console.log(callback(array))
+  return callback(array.length);
 }
-let arrayLength = function (itemsV2) {
-  return itemsV2.length
-}
-getLength(itemsV2, arrayLength);
+// Invocation of the function
+getLength(itemsV2, function(NewFunctionName){
+  console.log(NewFunctionName)
+});
 
 // end problem 1
 
 // start problem 2
-function last(array, cb) {
-  // last passes the last item of the array into the callback.
-  console.log(itemsV2.length)
-}
 
+function last(arr, cb) {
+  // last passes the last item of the array into the callback.
+    return cb(arr.splice(-1));
+}
+// Invocation of the function
+last(itemsV2, function(splice){
+    console.log(splice);
+});
 
 // end problem 2
 
 //start problem 3
+
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
+  return cb(x, y);
 }
+// Invocation of the function
+sumNums(840, 92473, function(x, y){
+  let result = x + y;
+  console.log(result);
+})
+// end problem 3
 
+// start problem 3
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
 }
