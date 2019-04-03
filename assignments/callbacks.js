@@ -61,17 +61,30 @@ sumNums(840, 92473, function(x, y){
   let result = x + y;
   console.log(result);
 })
+
 // end problem 3
 
-// start problem 3
+// start problem 4
+
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
+  return cb(x, y);
 }
+multiplyNums(25, 4, function(x, y){
+  let result = x * y;
+  console.log(result);
+});
+
+// end problem 4
+
+// start problem 5
 
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
+  return list.includes(item);
 }
+console.log(contains('Trident 8GB DDR5', itemsV2));
 
 /* STRETCH PROBLEM */
 
