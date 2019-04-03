@@ -86,6 +86,9 @@ function contains(item, list, cb) {
 }
 console.log(contains('Trident 8GB DDR5', itemsV2));
 
+//////// Hey Jamie, id like you to go over this one with me and help me set it up like i did the others without the console.log outside the function.
+
+// end problem 5
 /* STRETCH PROBLEM */
 
 function removeDuplicates(array, cb) {
