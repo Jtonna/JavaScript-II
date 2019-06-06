@@ -1,5 +1,17 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+let reddit = 'https://reddit.com/r/pcmasterrace'
+function Ill_Take_WhatIsGenocideFor500_Alex() {
+    let master = 'Master';
+    let race = 'Race';
+
+    function MyManifesto() {
+        console.log(`PC is the ${master} ${race}, if you have questions or concerns ask ${reddit}`);
+    }
+
+    MyManifesto();
+}
+Ill_Take_WhatIsGenocideFor500_Alex();
 
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
